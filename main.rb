@@ -1,3 +1,6 @@
-require "./parser/shinkoganeikaido"
+$:.unshift(File.dirname(File.expand_path(__FILE__)) + '/parser')
+$:.unshift(File.dirname(File.expand_path(__FILE__)) + '/data')
 
-puts ShinkoganaikaidoParser.new.parse
+require "shinkoganeikaido"
+
+puts ShinkoganeikaidoParser.new.parse
