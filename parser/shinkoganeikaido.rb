@@ -1,4 +1,4 @@
-class ShinkoganaikaidoParser
+class ShinkoganeikaidoParser
   def parse()
     begin
       File.open('./data/shinkoganeikaido_201607.txt') do |file|
