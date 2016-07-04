@@ -1,5 +1,8 @@
+$:.unshift(File.dirname(File.expand_path(__FILE__)) + '/../../parser')
+$:.unshift(File.dirname(File.expand_path(__FILE__)) + '/../../data')
+
 require "spec_helper"
-require "./parser/shinkoganeikaido"
+require "shinkoganeikaido"
 
 describe "Shinkoganeikaido" do
   it "is named 'jiro'" do
