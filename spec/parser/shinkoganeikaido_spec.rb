@@ -12,6 +12,6 @@ describe "新小金井街道店" do
 
   it "PC店から取得した2016年7月の休業日が4, 11, 18, 25になること" do
     parser = ShinkoganeikaidoParser.new
-    expect(parser.parse_pc_site).to eq ["4","11","18","25"]
+    expect(parser.parse_pc_site("201607")).to eq ["4","11","18","25"]
   end
 end

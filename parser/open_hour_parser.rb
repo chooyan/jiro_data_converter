@@ -16,4 +16,10 @@ class OpenHourParser
       puts %Q(class=[#{e.class}] message=[#{e.message}])
     end
   end
+
+  def parse_pc_site(close_day_str, month)
+    close_days = close_day_str.split("・") unless close_day_str.nil?
+
+  end
+
 end
